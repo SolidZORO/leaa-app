@@ -38,7 +38,7 @@ export default () => {
     <StoreProvider value={initStore()}>
       <Provider theme={themeConfig}>
         <ApolloProvider client={apolloClient}>
-          <AppContainer theme="light" />
+          <AppContainer />
         </ApolloProvider>
       </Provider>
     </StoreProvider>

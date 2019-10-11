@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { SafeAreaView, Modal, ActivityIndicator } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { WebViewNavigation } from 'react-native-webview/lib/WebViewTypes';
-import { NavigationScreenProp, NavigationRoute } from 'react-navigation';
 import { openBrowserAsync } from 'expo-web-browser';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import { IImageInfo } from 'react-native-image-zoom-viewer/src/image-viewer.type';
@@ -15,7 +14,6 @@ import style from './style.less';
 interface IProps {
   content: string;
   title?: string;
-  navigation: NavigationScreenProp<NavigationRoute>;
 }
 
 export const RenderHtml = (props: IProps) => {

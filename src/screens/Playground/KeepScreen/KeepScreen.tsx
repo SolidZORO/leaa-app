@@ -21,9 +21,3 @@ export const KeepScreen = (props: IProps) => {
     </SafeAreaView>
   );
 };
-
-// KeepScreen.navigationOptions = (props: IProps): INavigationStackOptions => {
-//   return {
-//     // header: null,
-//   };
-// };

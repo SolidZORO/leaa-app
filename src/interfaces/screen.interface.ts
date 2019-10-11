@@ -1,5 +1,12 @@
-import { NavigationDescriptor } from 'react-navigation';
-import { NavigationStackOptions } from 'react-navigation-stack/src/types';
+import { ParamListBase } from '@react-navigation/core';
+import { StackNavigationProp, StackNavigationOptions } from '@react-navigation/stack';
 
-export interface IScreenProps extends NavigationDescriptor {}
-export type INavigationStackOptions = NavigationStackOptions;
+export interface IScreenProps {
+  navigation: StackNavigationProp<ParamListBase>;
+  route: {
+    key: string;
+    name: string;
+    params: any;
+  };
+}
+export type INavigationStackOptions = StackNavigationOptions;

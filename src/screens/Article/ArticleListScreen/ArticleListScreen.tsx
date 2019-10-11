@@ -16,7 +16,9 @@ import style from './style.less';
 interface IProps extends IScreenProps {}
 
 export const ArticleListScreen = (props: IProps) => {
-  // setTimeout(() => props.navigation.navigate('ArticleItem', { id: 69 }), 100);
+  props.navigation.setOptions({
+    header: null,
+  });
 
   const getArticlesVariables: ArticlesArgs = {
     page: 1,
@@ -99,7 +101,7 @@ export const ArticleListScreen = (props: IProps) => {
           }
           keyExtractor={({ id }, index) => `${id}-${index}`}
           renderItem={({ item }) => (
-            <TouchableOpacity onPress={() => props.navigation.navigate('ArticleItem', { ...item })}>
+            <TouchableOpacity onPress={() => props.navigation.push('ArticleItem', { ...item })}>
               <View style={style['item']}>
                 <View style={style['item-title']}>
                   <Text style={style['item-title-text']}>{item.title}</Text>
@@ -121,10 +123,4 @@ export const ArticleListScreen = (props: IProps) => {
       </View>
     </SafeAreaView>
   );
-};
-
-ArticleListScreen.navigationOptions = (props: IProps): INavigationStackOptions => {
-  return {
-    header: null,
-  };
 };

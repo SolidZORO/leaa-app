@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { SafeAreaView, RefreshControl, ScrollView } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-import { IScreenProps } from '@leaa/app/src/interfaces';
+import { IScreenProps } from '@/interfaces';
 
 import style from './style.less';
 
 interface IProps extends IScreenProps {}
 
 export const LinkWebviewScreen = (props: IProps) => {
-  const uri = props.navigation.state.params && props.navigation.state.params.uri;
+  const uri = props.route.params && props.route.params.uri;
   const [loading, setLoading] = useState<boolean>(false);
 
   let webViewRef: WebView | null;

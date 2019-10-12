@@ -1,4 +1,4 @@
-import { Base, Category } from '@leaa/app/src/entrys';
+import { Base, Category } from '@/entrys';
 
 export interface Article extends Base {
   title: string;

@@ -4,13 +4,13 @@ import { useMutation } from '@apollo/react-hooks';
 import useForm from 'react-hook-form';
 import { Button } from '@ant-design/react-native';
 
-import { LOGIN_FOR_WWW } from '@leaa/app/src/graphqls';
-import { ILogin, IAuthBaseInfo } from '@leaa/app/src/interfaces';
-import { User } from '@leaa/app/src/entrys';
-import { authUtil } from '@leaa/app/src/utils';
+import { LOGIN_FOR_WWW } from '@/graphqls';
+import { ILogin, IAuthBaseInfo } from '@/interfaces';
+import { User } from '@/entrys';
+import { authUtil } from '@/utils';
 
-import { IconFont } from '@leaa/app/src/components/IconFont';
-import { ErrorCard } from '@leaa/app/src/components/ErrorCard';
+import { IconFont } from '@/components/IconFont';
+import { ErrorCard } from '@/components/ErrorCard';
 
 import style from './style.less';
 

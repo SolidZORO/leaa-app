@@ -2,7 +2,7 @@ import { configure } from 'mobx';
 import { useStaticRendering } from 'mobx-react-lite';
 import { createContext, useContext } from 'react';
 
-import { IAuthStore, AuthStore } from '@leaa/app/src/stores/auth.store';
+import { IAuthStore, AuthStore } from '@/stores/auth.store';
 
 export interface IStore {
   auth?: IAuthStore;

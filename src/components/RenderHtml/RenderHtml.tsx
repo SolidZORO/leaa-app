@@ -6,8 +6,8 @@ import { openBrowserAsync } from 'expo-web-browser';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import { IImageInfo } from 'react-native-image-zoom-viewer/src/image-viewer.type';
 
-import { htmlContent } from '@leaa/app/src/components/RenderHtml/htmlContent';
-import { htmlScript } from '@leaa/app/src/components/RenderHtml/htmlScript';
+import { htmlContent } from '@/components/RenderHtml/htmlContent';
+import { htmlScript } from '@/components/RenderHtml/htmlScript';
 
 import style from './style.less';
 

@@ -11,6 +11,15 @@ module.exports = function(api) {
           libraryName: '@ant-design/react-native',
         },
       ],
+      [
+        'module-resolver',
+        {
+          // root: ['.'],
+          alias: {
+            '@': './src',
+          },
+        },
+      ],
     ],
   };
 };

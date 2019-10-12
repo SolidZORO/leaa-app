@@ -12,7 +12,7 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "paths": {
-      "@leaa/app/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src/**/*", "config/**/*", "typings/*", "App.tsx", "index.tsx", "global.d.ts"],

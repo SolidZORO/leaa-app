@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { Button } from '@ant-design/react-native';
 
-import { authUtil } from '@leaa/app/src/utils';
+import { authUtil } from '@/utils';
 
 import style from './style.less';
 

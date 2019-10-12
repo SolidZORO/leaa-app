@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
-import { IconFont } from '@leaa/app/src/components/IconFont';
+import { IconFont } from '@/components/IconFont';
 
-import { IScreenProps } from '@leaa/app/src/interfaces';
-import { authUtil } from '@leaa/app/src/utils';
+import { IScreenProps } from '@/interfaces';
+import { authUtil } from '@/utils';
 
 import style from './style.less';
 

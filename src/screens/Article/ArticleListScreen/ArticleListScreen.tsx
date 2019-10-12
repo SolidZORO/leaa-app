@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import { Text, View, FlatList, SafeAreaView, TouchableOpacity, Animated, ActivityIndicator } from 'react-native';
 import { useQuery } from '@apollo/react-hooks';
 
-import { IScreenProps, INavigationStackOptions } from '@leaa/app/src/interfaces';
-import { GET_ARTICLES } from '@leaa/app/src/graphqls';
+import { IScreenProps } from '@/interfaces';
+import { GET_ARTICLES } from '@/graphqls';
 
-import { AnimatedTitle } from '@leaa/app/src/components/AnimatedTitle';
-import { ErrorCard } from '@leaa/app/src/components/ErrorCard';
-import { ArticlesWithPaginationObject } from '@leaa/app/src/dtos/article/articles-with-pagination.object';
-import { ArticlesArgs } from '@leaa/app/src/dtos/article/articles.args';
+import { AnimatedTitle } from '@/components/AnimatedTitle';
+import { ErrorCard } from '@/components/ErrorCard';
+import { ArticlesWithPaginationObject } from '@/dtos/article/articles-with-pagination.object';
+import { ArticlesArgs } from '@/dtos/article/articles.args';
 
 import style from './style.less';
 

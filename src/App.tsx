@@ -7,10 +7,10 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { useScreens } from 'react-native-screens'; // eslint-disable-line import/no-unresolved
 import { Provider } from '@ant-design/react-native';
 
-import { apolloClient } from '@leaa/app/src/libs/apollo-client.lib';
-import { AppContainer } from '@leaa/app/src/navs/AppNavigator/AppNavigator';
-import { themeConfig } from '@leaa/app/src/configs';
-import { StoreProvider, initStore } from '@leaa/app/src/stores';
+import { apolloClient } from '@/libs/apollo-client.lib';
+import { AppContainer } from '@/navs/AppNavigator/AppNavigator';
+import { themeConfig } from '@/configs';
+import { StoreProvider, initStore } from '@/stores';
 
 useScreens(); // @see https://reactnavigation.org/docs/en/react-native-screens.html
 
@@ -19,8 +19,8 @@ export default () => {
 
   const loadFont = async () => {
     await Font.loadAsync({
-      antoutline: require('@leaa/app/src/assets/fonts/antd/antoutline.ttf'),
-      antfill: require('@leaa/app/src/assets/fonts/antd/antfill.ttf'),
+      antoutline: require('@/assets/fonts/antd/antoutline.ttf'),
+      antfill: require('@/assets/fonts/antd/antfill.ttf'),
     });
 
     setFontIsReady(true);

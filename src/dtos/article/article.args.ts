@@ -1,3 +1,3 @@
-import { ItemArgs } from '@leaa/app/src/dtos/_common';
+import { ItemArgs } from '@/dtos/_common';
 
 export interface ArticleArgs extends ItemArgs {}

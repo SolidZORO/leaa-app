@@ -1,7 +1,7 @@
 import { createIconSet } from 'react-native-vector-icons';
-import glyphMap from '@leaa/app/src/assets/fonts/fi/iconfont.json';
+import glyphMap from '@/assets/fonts/fi/iconfont.json';
 
-const iconSet = createIconSet(glyphMap, 'iconfont', require('@leaa/app/src/assets/fonts/fi/iconfont.ttf'));
+const iconSet = createIconSet(glyphMap, 'iconfont', require('@/assets/fonts/fi/iconfont.ttf'));
 
 export default iconSet;
 

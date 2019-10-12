@@ -4,15 +4,15 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationNativeContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { IconFont } from '@leaa/app/src/components/IconFont';
+import { IconFont } from '@/components/IconFont';
 
-import { ArticleItemScreen } from '@leaa/app/src/screens/Article/ArticleItemScreen/ArticleItemScreen';
-import { ArticleListScreen } from '@leaa/app/src/screens/Article/ArticleListScreen/ArticleListScreen';
-import { LoginScreen } from '@leaa/app/src/screens/Auth/LoginScreen/LoginScreen';
-import { SignupScreen } from '@leaa/app/src/screens/Auth/SignupScreen/SignupScreen';
-import { KeepScreen } from '@leaa/app/src/screens/Playground/KeepScreen/KeepScreen';
-import { HomeScreen } from '@leaa/app/src/screens/Home/HomeScreen/HomeScreen';
-import { AccountScreen } from '@leaa/app/src/screens/Account/AccountScreen/AccountScreen';
+import { ArticleItemScreen } from '@/screens/Article/ArticleItemScreen/ArticleItemScreen';
+import { ArticleListScreen } from '@/screens/Article/ArticleListScreen/ArticleListScreen';
+import { LoginScreen } from '@/screens/Auth/LoginScreen/LoginScreen';
+import { SignupScreen } from '@/screens/Auth/SignupScreen/SignupScreen';
+import { KeepScreen } from '@/screens/Playground/KeepScreen/KeepScreen';
+import { HomeScreen } from '@/screens/Home/HomeScreen/HomeScreen';
+import { AccountScreen } from '@/screens/Account/AccountScreen/AccountScreen';
 
 interface IScreenOptionProps {
   tintColor: string;

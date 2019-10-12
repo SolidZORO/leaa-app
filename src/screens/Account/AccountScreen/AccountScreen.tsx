@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
-import { IconFont } from '@leaa/app/src/components/IconFont';
+import { IconFont } from '@/components/IconFont';
 
-import { IScreenProps, IAuthBaseInfo } from '@leaa/app/src/interfaces';
-import { authUtil } from '@leaa/app/src/utils';
-import { useStore } from '@leaa/app/src/stores';
+import { IScreenProps, IAuthBaseInfo } from '@/interfaces';
+import { authUtil } from '@/utils';
+import { useStore } from '@/stores';
 import { LogoutButton } from './_compponents/LogoutButton/LogoutButton';
 
 import style from './style.less';

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, View, SafeAreaView } from 'react-native';
 
-import { IScreenProps, INavigationStackOptions, IAuthBaseInfo } from '@leaa/app/src/interfaces';
-import { IconFont } from '@leaa/app/src/components/IconFont';
+import { IScreenProps, INavigationStackOptions, IAuthBaseInfo } from '@/interfaces';
+import { IconFont } from '@/components/IconFont';
 
 import style from './style.less';
 

@@ -78,7 +78,7 @@ module.exports = {
     // MONOREPO
     'prettier/prettier': 'error',
     'import/no-extraneous-dependencies': 0,
-    'import/no-unresolved': ['error', { ignore: ['@leaa'] }],
+    'import/no-unresolved': 0,
   },
   settings: {
     'import/resolver': {

@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
 
-import { IAuthInfo, IAuthBaseInfo } from '@leaa/app/src/interfaces';
-import { AUTH_TOKEN_NAME, AUTH_INFO, AUTH_EXPIRES_IN_NAME } from '@leaa/app/src/constants';
+import { IAuthInfo, IAuthBaseInfo } from '@/interfaces';
+import { AUTH_TOKEN_NAME, AUTH_INFO, AUTH_EXPIRES_IN_NAME } from '@/constants';
 
 const setAuthToken = async (token: string, expiresIn: number) => {
   const expiresInTime = `${Math.floor(Date.now() / 1000) + expiresIn}`;

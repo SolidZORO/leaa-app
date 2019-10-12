@@ -3,7 +3,7 @@ import { ApolloLink, split } from 'apollo-link';
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { OperationDefinitionNode } from 'graphql';
-import { envConfig } from '@leaa/app/src/configs';
+import { envConfig } from '@/configs';
 
 // import { authUtil } from '@leaa/dashboard/src/utils';
 
